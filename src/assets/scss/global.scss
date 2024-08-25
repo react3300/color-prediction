@@ -1,0 +1,439 @@
+body {
+  background-color: #fff;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  // background: url('../images/color-banner2.webp') no-repeat center center;
+  // background-size: cover;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+
+/* src/Home.css */
+// body {
+//   margin: 0;
+//   font-family: 'Arial', sans-serif;
+//   background-color: #f0f0f0;
+// }
+
+// .home-container {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   height: 100vh;
+//   /* Full viewport height */
+//   width: 100vw;
+//   /* Full viewport width */
+//   text-align: center;
+//   padding: 0;
+//   margin: 0;
+//   overflow: hidden;
+//   /* Prevent scrolling */
+//   background: url('../images/color-banner2.webp') no-repeat center center;
+//   background-size: cover;
+//   /* Ensure the image covers the entire area */
+//   // background-position: center;
+//   /* Center the image in the container */
+// }
+
+
+// .banner {
+//   background: linear-gradient(135deg, #ff0066, #ffcc00);
+//   color: white;
+//   padding: 30px;
+//   border-radius: 10px;
+//   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+//   margin-bottom: 20px;
+// }
+
+// .banner h1 {
+//   font-size: 2.5rem;
+//   margin: 0;
+//   color: white;
+//   animation: slideIn 1s ease-out;
+// }
+
+// /* Keyframes for sliding effect */
+// @keyframes slideIn {
+//   from {
+//     transform: translateY(-20px);
+//     opacity: 0;
+//   }
+
+//   to {
+//     transform: translateY(0);
+//     opacity: 1;
+//   }
+// }
+
+// .buttons-container {
+//   display: flex;
+//   gap: 15px;
+// }
+
+// .game-button,
+// .about-button {
+//   background: linear-gradient(45deg, #ff0066, #ffcc00);
+//   color: white;
+//   border: none;
+//   border-radius: 5px;
+//   padding: 15px 25px;
+//   font-size: 1.2rem;
+//   cursor: pointer;
+//   transition: background 0.3s ease, transform 0.3s ease;
+// }
+
+// .game-button:hover,
+// .about-button:hover {
+//   background: linear-gradient(45deg, #ffcc00, #ff0066);
+//   transform: scale(1.05);
+// }
+
+// .game-button {
+//   background: #ff0066;
+// }
+
+// .about-button {
+//   background: #ffcc00;
+// }
+.home-container {
+  display: flex;
+  justify-content: flex-end;
+  /* Align content to the right */
+  align-items: center;
+  /* Center content vertically */
+  height: 100vh;
+  /* Full viewport height */
+  width: 100vw;
+  /* Full viewport width */
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  /* Prevent scrolling */
+  background: url('../images/color-banner2.webp') no-repeat center center;
+  background-size: cover;
+  /* Ensure the image covers the entire area */
+}
+
+.right-side {
+  // background: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent background for better text visibility */
+  padding: 30px;
+  border-radius: 10px;
+  margin-right: 20px;
+  /* Space from the right edge */
+  text-align: center;
+  /* Center text inside */
+}
+
+.banner {
+  background: linear-gradient(135deg, rgba(255, 0, 102, 0.8), rgba(255, 204, 0, 0.8));
+  /* Gradient overlay for banner */
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: white;
+  animation: slideIn 1s ease-out;
+}
+
+/* Keyframes for sliding effect */
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.buttons-container {
+  // display: flex;
+  gap: 15px;
+  width: 100%;
+  margin: auto;
+}
+
+.game-button,
+.about-button {
+  background: linear-gradient(45deg, #ff0066, #ffcc00);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.game-button:hover,
+.about-button:hover {
+  background: linear-gradient(45deg, #ffcc00, #ff0066);
+  transform: scale(1.05);
+}
+
+.game-button {
+  background: #ff0066;
+}
+
+.about-button {
+  background: #ffcc00;
+}
+
+
+// h1 {
+//   background-color: steelblue;
+//   margin: 0;
+//   padding: 20px;
+//   font-size: 2em;
+// }
+
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  /* Smaller gap for a tighter design */
+  max-width: 400px;
+  /* Smaller container */
+  margin: 20px auto;
+}
+
+.square {
+  width: 100px;
+  /* Small size for the circle */
+  height: 100px;
+  /* Fixed height to maintain circular shape */
+  border-radius: 50%;
+  /* Makes the div circular */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  /* Softer shadow for a subtle 3D effect */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 10px;
+  /* Smaller text for small circles */
+  font-weight: bold;
+  color: white;
+  border: 2px solid #b30000;
+  /* Pepperoni-like red border */
+  transition: transform 0.2s ease-in-out;
+  /* Adds a slight zoom effect on hover */
+}
+
+.square:hover {
+  transform: scale(1.1);
+  /* Zoom effect on hover */
+}
+
+.circle-text {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  /* Adds a playful, game-like font */
+  font-size: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  /* Adds depth to the text */
+}
+
+
+#colorDisplay {
+  font-size: 2em;
+  margin: 20px 0;
+  color: #000;
+}
+
+#message {
+  margin-top: 10px;
+  height: 20px;
+}
+
+#reset {
+  background-color: steelblue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #4CAF50;
+  }
+}
+
+
+
+.winner-container {
+  text-align: center;
+  position: relative;
+}
+
+.winner-name {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+  /* White text */
+  background: linear-gradient(45deg, #ff0055, #ff7700, #77ff00, #0055ff);
+  /* Vibrant gradient */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: inline-block;
+  // padding: 20px;
+  border-radius: 10px;
+  // box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  // animation: glowing 1.5s infinite alternate, pulse 1.5s infinite alternate;
+}
+
+/* Glowing effect */
+// @keyframes glowing {
+//   0% {
+//     text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+//   }
+
+//   100% {
+//     text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.6);
+//   }
+// }
+
+/* Pulsing effect */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/* Add a flashing border effect */
+// .winner-name::before {
+//   content: '';
+//   position: absolute;
+//   top: -11px;
+//   left: -12px;
+//   width: calc(100% + 10px);
+//   height: calc(100% + 10px);
+//   border-radius: 15px;
+//   border: 5px dashed #ff0055;
+//   /* Flashing border color */
+//   opacity: 0.8;
+//   animation: flash 1s infinite;
+// }
+
+/* Flashing border animation */
+@keyframes flash {
+  0% {
+    border-color: #ff0055;
+  }
+
+  50% {
+    border-color: #ff7700;
+  }
+
+  100% {
+    border-color: #ff0055;
+  }
+}
+
+
+.Prediction {
+  width: 482px;
+  margin: auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+
+/* src/Wallet.css */
+
+.wallet-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.balance {
+  margin-bottom: 20px;
+}
+
+button {
+  margin: 10px;
+}
+
+
+/* src/Wallet.css */
+
+.wallet-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.balance-container {
+  margin-bottom: 20px;
+}
+
+.balance {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wallet-button {
+  width: 45%;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.wallet-button:first-child {
+  margin-right: 10px;
+}
+
+.wallet-button:last-child {
+  margin-left: 10px;
+}
